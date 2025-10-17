@@ -23,3 +23,6 @@ $(TWEAK_NAME)_FILES += Sideloading.xm
 endif
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+
+ARCHS = arm64
+CFLAGS += -Wno-vla-cxx-extension
